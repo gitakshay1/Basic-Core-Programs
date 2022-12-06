@@ -9,7 +9,7 @@ namespace Basic_Core_Programs
             while(Flag)
             {
                 Console.WriteLine("1 Flip Coin \n2 Leap Year \n3 Table of Power of 2 \n4 Harmonic Number" +
-                    "\n5 Prime Factors");
+                    "\n5 Prime Factors \n6 Quotient Reminder");
                 int Option=Convert.ToInt32(Console.ReadLine());
                 switch(Option)
                 {
@@ -32,6 +32,10 @@ namespace Basic_Core_Programs
                     case 5:
                         Factors factors= new Factors();
                         factors.Prime_Factors();
+                        break;
+                    case 6:
+                        QuotientReminder quotientReminder= new QuotientReminder();
+                        quotientReminder.ComputeQuotientReminder();
                         break;
                     default:
                         Console.WriteLine("Enter Valid Number");
