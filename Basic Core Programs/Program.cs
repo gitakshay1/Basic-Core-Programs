@@ -8,7 +8,8 @@ namespace Basic_Core_Programs
             bool Flag=true;
             while(Flag)
             {
-                Console.WriteLine("1 Flip Coin \n2 Leap Year \n3 Table of Power of 2 \n4 Harmonic Number");
+                Console.WriteLine("1 Flip Coin \n2 Leap Year \n3 Table of Power of 2 \n4 Harmonic Number" +
+                    "\n5 Prime Factors");
                 int Option=Convert.ToInt32(Console.ReadLine());
                 switch(Option)
                 {
@@ -28,6 +29,10 @@ namespace Basic_Core_Programs
                         Harmonic_Number harmonivalue= new Harmonic_Number();
                         harmonivalue.NthHarmonicNumber();
                         break; 
+                    case 5:
+                        Factors factors= new Factors();
+                        factors.Prime_Factors();
+                        break;
                     default:
                         Console.WriteLine("Enter Valid Number");
                         break;
