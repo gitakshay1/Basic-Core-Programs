@@ -8,7 +8,7 @@ namespace Basic_Core_Programs
             bool Flag=true;
             while(Flag)
             {
-                Console.WriteLine("1 Flip Coin \n2 Leap Year");
+                Console.WriteLine("1 Flip Coin \n2 Leap Year \n3 Table of Power of 2");
                 int Option=Convert.ToInt32(Console.ReadLine());
                 switch(Option)
                 {
@@ -20,6 +20,10 @@ namespace Basic_Core_Programs
                         LeapYear leapYear= new LeapYear();
                         leapYear.checkLeapYear();
                         break; 
+                    case 3:
+                        PowerOf2 powerof2= new PowerOf2();
+                        powerof2.tableofpowrof2();
+                        break;
                     default:
                         Console.WriteLine("Enter Valid Number");
                         break;
