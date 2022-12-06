@@ -17,7 +17,7 @@ namespace Basic_Core_Programs
             {
                 Harmonic_Value = Harmonic_Value + 1 / i;
             }
-            Console.WriteLine(N + "th Harmonic Value is " + Harmonic_Value);
+            Console.WriteLine(N + " th Harmonic Value is " + Harmonic_Value);
         }
     }
 }
