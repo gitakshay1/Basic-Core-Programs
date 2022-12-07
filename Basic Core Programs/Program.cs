@@ -10,7 +10,7 @@ namespace Basic_Core_Programs
             {
                 Console.WriteLine("1 Flip Coin \n2 Leap Year \n3 Table of Power of 2 \n4 Harmonic Number" +
                     "\n5 Prime Factors \n6 Quotient Reminder \n7 Swap Numbers \n8 Even Or Odd \n9 Alphabet Vowel or Consonant" +
-                    "");
+                    "\n10 Compare Numbers");
                 int Option=Convert.ToInt32(Console.ReadLine());
                 switch(Option)
                 {
@@ -49,6 +49,10 @@ namespace Basic_Core_Programs
                     case 9:
                         VowelOrConsonant vowelOrConsonant= new VowelOrConsonant();
                         vowelOrConsonant.CheckVowelorConsanant();
+                        break;
+                    case 10:
+                        LargestNumber largestNumber= new LargestNumber();
+                        largestNumber.NumberCoparison();
                         break;
                     default:
                         Console.WriteLine("Enter Valid Number");
