@@ -14,7 +14,7 @@ namespace Basic_Core_Programs
             int N = Convert.ToInt32(Console.ReadLine());
             int j = N;
             Console.WriteLine("Prime Factor of Number" + N + "are:\n");
-            for(int i=2; i*i<=N/2; i++)
+            for(int i=2;i<=N/2; i++)
             {
                if(j%i==0)
                 {
