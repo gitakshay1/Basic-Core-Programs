@@ -9,7 +9,7 @@ namespace Basic_Core_Programs
             while(Flag)
             {
                 Console.WriteLine("1 Flip Coin \n2 Leap Year \n3 Table of Power of 2 \n4 Harmonic Number" +
-                    "\n5 Prime Factors \n6 Quotient Reminder \n7 Swap Numbers");
+                    "\n5 Prime Factors \n6 Quotient Reminder \n7 Swap Numbers \n8 Even Or Odd");
                 int Option=Convert.ToInt32(Console.ReadLine());
                 switch(Option)
                 {
@@ -40,6 +40,10 @@ namespace Basic_Core_Programs
                     case 7:
                         Swap_Numbers swap_Numbers= new Swap_Numbers();
                         swap_Numbers.SwapTwoNumbers();
+                        break;
+                    case 8:
+                        EvenOdd evenOdd= new EvenOdd();
+                        evenOdd.CheckEvenOdd();
                         break;
                     default:
                         Console.WriteLine("Enter Valid Number");
